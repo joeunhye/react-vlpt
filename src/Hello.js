@@ -1,8 +1,12 @@
 import React from 'react';
 
-function Hello({color, name}) {
+function Hello({color, name, children, isSpecial}) {
     //console.log(props)
-    return <div><strong style={{color: color}}>안녕하세요!</strong> {name}</div>
+    return <div><strong style={{color: color}}>
+        {isSpecial && <b>*</b>}
+        안녕하세요!</strong> 
+        {name}{children}
+        </div> 
 }
 
 Hello.defaultProps = {
