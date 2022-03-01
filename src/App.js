@@ -4,6 +4,7 @@ import Hello from './Hello'
 import './App.css';
 import Wrapper from './Wrapper';
 import Counter from './Counter';
+import InputSample from './InputSample';
 
 function App() {
   const name = 'React';
@@ -23,6 +24,7 @@ function App() {
         <p style={style}>{name}</p>
         <div className='gray-box' // 요렇게도 가능합니다.
         ></div>
+        <InputSample />
       </Wrapper>
 
       <Counter />
